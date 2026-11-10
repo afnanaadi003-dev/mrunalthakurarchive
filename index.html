@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mrunal Thakur Archive: Visionary Grace & Cinematic Legacy</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            100: '#fef3c7',
+                            300: '#fde047',
+                            400: '#eab308',
+                            500: '#d4af37',
+                            600: '#a16207',
+                            700: '#854d0e',
+                        },
+                        midnight: {
+                            950: '#070a14',
+                            900: '#0d1326',
+                            800: '#141d38',
+                            700: '#1e2b52',
+                        }
+                    },
+                    fontFamily: {
+                        cinzel: ['Cinzel', 'serif'],
+                        playfair: ['Playfair Display', 'serif'],
+                        sans: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #070a14;
+            color: #e2e8f0;
+            font-family: 'Montserrat', sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #070a14;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #d4af37;
+            border-radius: 4px;
+        }
+
+        /* Gold Gradient Text */
+        .gold-text-gradient {
+            background: linear-gradient(135deg, #fff3c7 0%, #d4af37 50%, #fde047 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Glassmorphism Card */
+        .glass-card {
+            background: rgba(13, 19, 38, 0.78);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(212, 175, 55, 0.22);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .glass-card:hover {
+            border-color: rgba(212, 175, 55, 0.6);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px -10px rgba(212, 175, 55, 0.25);
+        }
+
+        /* Hero Background Glow */
+        .hero-glow {
+            background: radial-gradient(circle at 50% 30%, rgba(212, 175, 55, 0.15) 0%, rgba(13, 19, 38, 0.4) 50%, rgba(7, 10, 20, 0.95) 90%);
+        }
+
+        /* Modal backdrop transition */
+        .modal-blur {
+            backdrop-filter: blur(8px);
+        }
+    </style>
+</head>
+<body class="selection:bg-gold-500 selection:text-black">
+
+    <!-- NAVIGATION BAR -->
+    <header class="fixed top-0 left-0 w-full z-40 glass-card bg-opacity-90 border-b border-gold-500/20 px-4 lg:px-8 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="#" class="font-cinzel text-xl md:text-2xl font-bold tracking-widest gold-text-gradient flex items-center gap-2">
+                <i class="fa-solid fa-crown text-gold-400 text-sm"></i> MRUNAL THAKUR
+            </a>
+            
+            <nav class="hidden lg:flex items-center space-x-8 text-xs font-semibold uppercase tracking-widest text-gray-300">
+                <a href="#biography" class="hover:text-gold-400 transition-colors">Biography & Journey</a>
+                <a href="#philosophy" class="hover:text-gold-400 transition-colors">Philosophy</a>
+                <a href="#filmography" class="hover:text-gold-400 transition-colors">Filmography</a>
+                <a href="#television" class="hover:text-gold-400 transition-colors">TV & Breakthrough</a>
+                <a href="#awards" class="hover:text-gold-400 transition-colors">Accolades</a>
+            </nav>
+
+            <button id="mobile-menu-btn" class="lg:hidden text-gold-400 text-2xl focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobile-drawer" class="hidden lg:hidden flex-col gap-4 pt-4 pb-2 border-t border-gold-500/20 mt-3 text-sm">
+            <a href="#biography" class="mobile-link text-gray-300 hover:text-gold-400">Biography & Journey</a>
+            <a href="#philosophy" class="mobile-link text-gray-300 hover:text-gold-400">Philosophy</a>
+            <a href="#filmography" class="mobile-link text-gray-300 hover:text-gold-400">Filmography</a>
+            <a href="#television" class="mobile-link text-gray-300 hover:text-gold-400">TV & Breakthrough</a>
+            <a href="#awards" class="mobile-link text-gray-300 hover:text-gold-400">Accolades</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="min-h-screen pt-28 pb-16 px-4 md:px-8 flex items-center justify-center hero-glow relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#d4af37_1px,transparent_1px)] [background-size:20px_20px]"></div>
+        
+        <div class="max-w-6xl mx-auto text-center z-10">
+            <span class="inline-block px-4 py-1.5 rounded-full border border-gold-500/40 bg-gold-500/10 text-gold-300 text-xs tracking-widest uppercase font-semibold mb-6">
+                Pan-Indian Superstar & Global Fashion Icon
+            </span>
+            
+            <h1 class="font-cinzel text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tight leading-tight mb-4 gold-text-gradient uppercase">
+                Visionary Grace & Cinematic Legacy
+            </h1>
+            
+            <p class="font-playfair italic text-lg sm:text-2xl text-gold-100/90 max-w-3xl mx-auto mb-8 font-light leading-relaxed">
+                "From television phenom to the defining voice of emotionally resonant, multi-lingual cinema."
+            </p>
+
+            <!-- Quick Stats & Profile Image Box -->
+            <div class="p-6 md:p-8 rounded-3xl glass-card max-w-4xl mx-auto mb-10 text-left border-gold-500/30 relative">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+                    <!-- Profile Image Box -->
+                    <div class="md:col-span-5 relative group">
+                        <div class="w-full h-80 rounded-2xl overflow-hidden border border-gold-500/40 shadow-2xl relative bg-midnight-900">
+                            <!-- SVG Stylized Portrait Illustration Box -->
+                            <div class="w-full h-full bg-gradient-to-b from-midnight-800 via-midnight-900 to-black flex flex-col items-center justify-center relative p-4">
+                                <div class="w-36 h-36 rounded-full border-2 border-gold-500/60 p-1 bg-gold-500/10 mb-4 flex items-center justify-center shadow-lg shadow-gold-500/20">
+                                    <i class="fa-solid fa-user-ninja text-6xl text-gold-400"></i>
+                                </div>
+                                <div class="text-center">
+                                    <h3 class="font-cinzel text-xl font-bold text-white tracking-wider">MRUNAL THAKUR</h3>
+                                    <span class="text-xs font-playfair italic text-gold-300">The Modern Muse of Cinema</span>
+                                </div>
+                                <span class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-gold-500/20 text-gold-300 border border-gold-500/40 text-[10px] font-cinzel font-bold">
+                                    ICONIC PROFILE
+                                </span>
+                            </div>
+                        </div>
+                        <span class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 text-center text-[10px] font-cinzel bg-black/90 text-gold-300 py-1.5 px-4 rounded-full border border-gold-500/40 shadow-lg whitespace-nowrap">
+                            SIIMA & FILMFARE AWARD WINNING ACTRESS
+                        </span>
+                    </div>
+
+                    <!-- Profile Information Box -->
+                    <div class="md:col-span-7 space-y-4">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-gem text-gold-400 text-sm"></i>
+                            <span class="font-cinzel text-xs font-bold text-gold-400 tracking-wider">PAN-INDIAN ARTISTIC POWERHOUSE</span>
+                        </div>
+                        <h2 class="font-cinzel text-2xl font-bold text-white">Mrunal Thakur</h2>
+                        <p class="text-xs md:text-sm text-gray-300 italic leading-relaxed font-playfair">
+                            "I don't choose characters based on screentime; I choose characters that linger in the audience's heart long after the credits roll. Authenticity is my only strategy."
+                        </p>
+                        
+                        <!-- Quick Stats Grid -->
+                        <div class="grid grid-cols-3 gap-3 pt-2">
+                            <div class="p-3 rounded-xl bg-midnight-950/80 border border-gold-500/20 text-center">
+                                <span class="block font-cinzel font-bold text-gold-300 text-lg md:text-xl">15+</span>
+                                <span class="text-[10px] text-gray-400 uppercase font-semibold">Blockbuster Feature Films</span>
+                            </div>
+                            <div class="p-3 rounded-xl bg-midnight-950/80 border border-gold-500/20 text-center">
+                                <span class="block font-cinzel font-bold text-gold-300 text-lg md:text-xl">3+</span>
+                                <span class="text-[10px] text-gray-400 uppercase font-semibold">Languages (Hindi, Telugu, Mar)</span>
+                            </div>
+                            <div class="p-3 rounded-xl bg-midnight-950/80 border border-gold-500/20 text-center">
+                                <span class="block font-cinzel font-bold text-gold-300 text-lg md:text-xl">SIIMA</span>
+                                <span class="text-[10px] text-gray-400 uppercase font-semibold">Best Actress Winner</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap gap-4 justify-center">
+                <a href="#filmography" class="px-8 py-3.5 rounded-xl bg-gradient-to-r from-gold-600 to-gold-400 text-black font-bold uppercase tracking-wider text-xs hover:shadow-lg hover:shadow-gold-500/30 transition-all transform hover:-translate-y-0.5">
+                    Explore Masterpiece Films
+                </a>
+                <a href="#philosophy" class="px-8 py-3.5 rounded-xl border border-gold-500/50 hover:border-gold-400 bg-black/40 text-gold-300 font-semibold uppercase tracking-wider text-xs transition-all flex items-center gap-2">
+                    <i class="fa-solid fa-quote-left"></i> Core Philosophy
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 1: BIOGRAPHY & JOURNEY -->
+    <section id="biography" class="py-20 px-4 md:px-8 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="font-cinzel text-3xl md:text-5xl font-bold gold-text-gradient mb-3">Biography & Evolution</h2>
+            <p class="text-sm text-gold-400/80 font-playfair italic">From Mass Television Favorite to Pan-Indian Classical Royalty</p>
+            <div class="w-24 h-1 bg-gradient-to-r from-transparent via-gold-500 to-transparent mx-auto mt-4"></div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            <div class="lg:col-span-7 glass-card p-6 md:p-8 rounded-2xl relative space-y-4">
+                <div class="flex items-center gap-3 mb-2">
+                    <div class="w-10 h-10 rounded-xl bg-gold-500/20 border border-gold-500/40 flex items-center justify-center text-gold-400">
+                        <i class="fa-solid fa-feather-pointed"></i>
+                    </div>
+                    <h3 class="font-cinzel text-xl font-bold text-gold-300">The Path of Unwavering Resolve</h3>
+                </div>
+
+                <p class="text-sm text-gray-300 leading-relaxed">
+                    Born in Dhule, Maharashtra, Mrunal Thakur's trajectory represents one of modern Indian cinema's most inspiring success stories. Starting her acting journey while studying journalism, she captured nationwide affection through hit television shows like <em>Mujhse Kuchh Kehti...Yeh Khwaab</em> and <em>Kumkum Bhagya</em>.
+                </p>
+
+                <p class="text-sm text-gray-300 leading-relaxed">
+                    Refusing to be constrained by TV stardom, she made a courageous leap into international cinema with Tabrez Noorani's hard-hitting film <em>Love Sonia</em> (2018), which premiered at the London Indian Film Festival. This opened doors to Hindi mainstream cinema with hits like <em>Super 30</em> alongside Hrithik Roshan and <em>Jersey</em> with Shahid Kapoor.
+                </p>
+
+                <p class="text-sm text-gray-300 leading-relaxed">
+                    Her monumental breakthrough as Sita Mahalakshmi / Princess Noor Jahan in Hanu Raghavapudi's Telugu romantic masterpiece <em>Sita Ramam</em> (2022) crowned her as a pan-Indian sensation, proving her rare ability to evoke timeless classical elegance and deep emotional resonance.
+                </p>
+
+                <div class="p-4 rounded-xl bg-midnight-950/80 border border-gold-500/30 text-xs italic text-gold-200">
+                    "Every rejection was just redirection. My journey taught me that when you trust your instinct and commit 100% to your work, the universe aligns."
+                </div>
+            </div>
+
+            <!-- Career Timeline -->
+            <div class="lg:col-span-5 glass-card p-6 md:p-8 rounded-2xl">
+                <h3 class="font-cinzel text-xl font-bold text-gold-300 mb-6 flex items-center gap-2">
+                    <i class="fa-solid fa-timeline text-gold-400"></i> Career Milestones
+                </h3>
+
+                <div class="space-y-6 relative border-l border-gold-500/30 pl-6 ml-2">
+                    <div class="relative">
+                        <div class="w-3 h-3 bg-gold-400 rounded-full absolute -left-[31px] top-1 border border-black"></div>
+                        <span class="text-xs font-cinzel text-gold-400 font-bold">2012 - 2016</span>
+                        <h4 class="text-sm font-bold text-white">TV Stardom & Household Fame</h4>
+                        <p class="text-xs text-gray-300">Starred as Bulbul Arora in <em>Kumkum Bhagya</em>, becoming a household name across India.</p>
+                    </div>
+
+                    <div class="relative">
+                        <div class="w-3 h-3 bg-gold-400 rounded-full absolute -left-[31px] top-1 border border-black"></div>
+                        <span class="text-xs font-cinzel text-gold-400 font-bold">2018</span>
+                        <h4 class="text-sm font-bold text-white">Global Breakthrough (Love Sonia)</h4>
+                        <p class="text-xs text-gray-300">Earned critical acclaim at international film festivals for her visceral debut lead in <em>Love Sonia</em>.</p>
+                    </div>
+
+                    <div class="relative">
+                        <div class="w-3 h-3 bg-gold-400 rounded-full absolute -left-[31px] top-1 border border-black"></div>
+                        <span class="text-xs font-cinzel text-gold-400 font-bold">2019 - 2021</span>
+                        <h4 class="text-sm font-bold text-white">Hindi Mainstream Success</h4>
+                        <p class="text-xs text-gray-300">Delivered memorable performances in box-office blockbusters <em>Super 30</em>, <em>Batla House</em>, and <em>Dhamaka</em>.</p>
+                    </div>
+
+                    <div class="relative">
+                        <div class="w-3 h-3 bg-gold-400 rounded-full absolute -left-[31px] top-1 border border-black"></div>
+                        <span class="text-xs font-cinzel text-gold-400 font-bold">2022 - Present</span>
+                        <h4 class="text-sm font-bold text-white">Pan-Indian Queen (Sita Ramam & Hi Nanna)</h4>
+                        <p class="text-xs text-gray-300">Won national devotion with <em>Sita Ramam</em> and <em>Hi Nanna</em>, establishing herself as South and North cinema's favorite heroine.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: PHILOSOPHY & QUOTES CAROUSEL -->
+    <section id="philosophy" class="py-20 px-4 md:px-8 bg-gradient-to-b from-transparent via-midnight-800/40 to-transparent border-y border-gold-500/20">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-10">
+                <span class="text-xs font-cinzel text-gold-400 tracking-widest uppercase">ARTISTIC MANIFESTO</span>
+                <h2 class="font-cinzel text-3xl md:text-5xl font-bold gold-text-gradient mt-1 mb-3">Philosophy & Vision</h2>
+                <p class="text-sm text-gold-400/80 font-playfair italic">15 Thoughts on Acting, Feminine Strength, and Authenticity</p>
+                <div class="w-24 h-1 bg-gradient-to-r from-transparent via-gold-500 to-transparent mx-auto mt-4"></div>
+            </div>
+
+            <div class="glass-card p-8 md:p-12 rounded-3xl relative border-gold-500/40 min-h-[300px] flex flex-col justify-between" id="carousel-card">
+                <i class="fa-solid fa-quote-left text-gold-500/10 text-7xl absolute top-4 left-6 pointer-events-none"></i>
+
+                <div class="space-y-4 relative z-10">
+                    <div class="flex justify-between items-center">
+                        <span id="thought-category" class="px-3 py-1 rounded-full bg-gold-500/20 text-gold-300 text-[11px] font-cinzel font-bold tracking-wider uppercase border border-gold-500/40"></span>
+                        <span id="thought-counter" class="text-xs font-cinzel text-gold-400 font-bold"></span>
+                    </div>
+
+                    <blockquote id="thought-text" class="font-playfair text-xl md:text-3xl text-gold-100 italic leading-relaxed pt-2">
+                        <!-- Dynamic text -->
+                    </blockquote>
+                </div>
+
+                <div class="mt-8 pt-6 border-t border-gold-500/20 flex flex-col sm:flex-row justify-between items-center gap-4 relative z-10">
+                    <button id="tts-btn" class="px-5 py-2.5 rounded-full bg-gold-500/20 hover:bg-gold-500 text-gold-300 hover:text-black border border-gold-500/40 font-cinzel text-xs font-bold uppercase tracking-wider transition-all flex items-center gap-2">
+                        <i class="fa-solid fa-volume-high" id="tts-icon"></i> Listen Thought
+                    </button>
+
+                    <div class="flex items-center gap-3">
+                        <button id="prev-btn" class="w-10 h-10 rounded-full border border-gold-500/40 hover:border-gold-400 bg-black/40 text-gold-300 flex items-center justify-center hover:bg-gold-500 hover:text-black transition-all">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        
+                        <button id="autoplay-btn" class="px-4 py-2 rounded-full border border-gold-500/40 text-xs font-cinzel font-bold text-gold-300 bg-black/40 hover:border-gold-400 flex items-center gap-1.5">
+                            <i class="fa-solid fa-pause" id="autoplay-icon"></i> Autoplay
+                        </button>
+
+                        <button id="next-btn" class="w-10 h-10 rounded-full border border-gold-500/40 hover:border-gold-400 bg-black/40 text-gold-300 flex items-center justify-center hover:bg-gold-500 hover:text-black transition-all">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="w-full h-1.5 bg-midnight-900 rounded-full mt-4 overflow-hidden border border-gold-500/20">
+                <div id="progress-bar" class="h-full bg-gradient-to-r from-gold-600 via-gold-400 to-gold-300 w-0 transition-all duration-300"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: FEATURED FILMOGRAPHY -->
+    <section id="filmography" class="py-20 px-4 md:px-8 max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="font-cinzel text-3xl md:text-5xl font-bold gold-text-gradient mb-3">Featured Filmography</h2>
+            <p class="text-sm text-gold-400/80 font-playfair italic">Iconic Performances Across Multi-Lingual Indian Cinema</p>
+            <div class="w-24 h-1 bg-gradient-to-r from-transparent via-gold-500 to-transparent mx-auto mt-4"></div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="films-grid">
+            <!-- Dynamic JS render -->
+        </div>
+    </section>
+
+    <!-- FILM DETAILS MODAL -->
+    <div id="film-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 modal-blur bg-black/85">
+        <div class="glass-card max-w-3xl w-full max-h-[90vh] overflow-y-auto rounded-3xl border-gold-500/50 p-6 md:p-8 relative">
+            <button id="close-modal-btn" class="absolute top-4 right-4 text-gray-400 hover:text-gold-400 text-2xl">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div id="modal-film-content">
+                <!-- Dynamically Populated -->
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION 4: TELEVISION BREAKTHROUGH & FASHION ICONOGRAPHY -->
+    <section id="television" class="py-20 px-4 md:px-8 bg-gradient-to-b from-transparent via-midnight-800/20 to-transparent">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-cinzel text-3xl md:text-5xl font-bold gold-text-gradient mb-3">Television & Fashion Supremacy</h2>
+                <p class="text-sm text-gold-400/80 font-playfair italic">Rooted Foundations and Global Red Carpet Distinction</p>
+                <div class="w-24 h-1 bg-gradient-to-r from-transparent via-gold-500 to-transparent mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Television Roots -->
+                <div class="glass-card p-6 md:p-8 rounded-2xl">
+                    <span class="text-xs font-cinzel text-gold-400 tracking-widest uppercase">The Television Foundation</span>
+                    <h3 class="font-cinzel text-2xl font-bold text-white mt-1 mb-4">Kumkum Bhagya & Early TV Mastery</h3>
+                    <p class="text-sm text-gray-300 leading-relaxed mb-4">
+                        Before making history on the big screen, Mrunal built an unbreakable emotional bond with Indian households. Her role as the vivacious Bulbul Arora in <em>Kumkum Bhagya</em> showcased her infectious screen presence and range.
+                    </p>
+                    <ul class="space-y-2.5 text-xs text-gray-300 mb-6">
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-star text-gold-400 text-xs"></i>
+                            <span><em>Kumkum Bhagya</em> — High-rating drama broadcast internationally across 20+ countries.</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-star text-gold-400 text-xs"></i>
+                            <span><em>Mujhse Kuchh Kehti...Yeh Khwaab</em> — Her acting debut character Yuvrani.</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-star text-gold-400 text-xs"></i>
+                            <span><em>Nach Baliye 7</em> — Showcasing her versatility as a performer and dancer.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Fashion & Cannes Icon -->
+                <div class="glass-card p-6 md:p-8 rounded-2xl">
+                    <span class="text-xs font-cinzel text-gold-400 tracking-widest uppercase">Fashion & Global Red Carpets</span>
+                    <h3 class="font-cinzel text-2xl font-bold text-white mt-1 mb-4">Cannes & Haute Couture Trailblazer</h3>
+                    <p class="text-sm text-gray-300 leading-relaxed mb-4">
+                        Mrunal Thakur has redefined red carpet fashion with her fearless choices, blending traditional Indian weaves like Kanjeevarams with edgy Western couture at prestigious global platforms like the Cannes Film Festival.
+                    </p>
+                    <div class="p-4 rounded-xl bg-gold-500/10 border border-gold-500/30 text-xs text-gold-200 italic font-playfair mb-4">
+                        "Fashion is an extension of my storytelling. Whether it's a traditional saree or structured couture, it should feel authentic to who I am."
+                    </div>
+                    <div class="flex items-center gap-3 text-xs font-cinzel text-gold-400">
+                        <i class="fa-solid fa-sparkles"></i> Global Brand Ambassador & Style Icon
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: AWARDS & ACCOLADES -->
+    <section id="awards" class="py-20 px-4 md:px-8 max-w-7xl mx-auto border-t border-gold-500/20">
+        <div class="text-center mb-16">
+            <h2 class="font-cinzel text-3xl md:text-5xl font-bold gold-text-gradient mb-3">Accolades & Recognition</h2>
+            <p class="text-sm text-gold-400/80 font-playfair italic">Celebrating Critical Acclaim & Box Office Triumphs</p>
+            <div class="w-24 h-1 bg-gradient-to-r from-transparent via-gold-500 to-transparent mx-auto mt-4"></div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" id="awards-grid">
+            <!-- Dynamic Render -->
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-gold-500/20 py-12 px-4 text-center bg-midnight-950">
+        <div class="max-w-7xl mx-auto space-y-4">
+            <p class="font-cinzel text-xl font-bold gold-text-gradient tracking-widest">MRUNAL THAKUR ARCHIVE</p>
+            <p class="text-xs text-gray-400 font-playfair italic max-w-xl mx-auto">
+                "Grace is not static; it is the courage to stay true to your emotional core through every story you choose to tell."
+            </p>
+            <p class="text-[11px] text-gray-500 uppercase tracking-widest pt-4">
+                Dedicated Cinematic Archive &copy; 2026. Visionary Grace.
+            </p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // --- DATA STRUCTURES --- //
+
+        const thoughtsData = [
+            { id: 1, text: "I don't choose roles based on screentime; I choose characters that linger in the audience's heart.", category: "Craft & Acting" },
+            { id: 2, text: "Every rejection I faced early in my career was simply redirection toward something greater.", category: "Resilience" },
+            { id: 3, text: "Playing Sita Mahalakshmi taught me that silence and grace can be more powerful than loud words.", category: "Character Insights" },
+            { id: 4, text: "Language should never be a barrier for an actor. Emotion is the only universal script.", category: "Pan-Indian Art" },
+            { id: 5, text: "Television gave me my work discipline; international film gave me perspective; Indian cinema gives me joy.", category: "Career Evolution" },
+            { id: 6, text: "True beauty on screen is when the character's soul shines through your eyes without pretence.", category: "Beauty & Grace" },
+            { id: 7, text: "Love Sonia broke my heart and rebuilt me as a more empathetic human being and actor.", category: "Craft & Acting" },
+            { id: 8, text: "Feminine strength isn't just about aggression; it's about emotional resilience and quiet courage.", category: "Feminine Strength" },
+            { id: 9, text: "I am proud of my Marathi roots—they keep me grounded no matter where in the world I perform.", category: "Identity & Roots" },
+            { id: 10, text: "Never let success change how hard you prepare for your next scene.", category: "Work Ethic" },
+            { id: 11, text: "Fashion is fun, but content will always remain the absolute king of cinema.", category: "Cinematic Vision" },
+            { id: 12, text: "Surrounding yourself with good stories and passionate directors is the best career strategy.", category: "Craft & Acting" },
+            { id: 13, text: "In Hi Nanna, Yashna's grief had to feel tender and lived-in, not dramatic for the sake of drama.", category: "Character Insights" },
+            { id: 14, text: "To be loved across North, South, and global audiences is a responsibility I cherish every day.", category: "Gratitude" },
+            { id: 15, text: "Trust the process. Your journey belongs exclusively to you.", category: "Self-Belief" }
+        ];
+
+        const filmsData = [
+            {
+                id: 'sita-ramam',
+                title: 'Sita Ramam',
+                year: '2022',
+                director: 'Hanu Raghavapudi',
+                language: 'Telugu / Multi',
+                role: 'Sita Mahalakshmi / Princess Noor Jahan',
+                coStar: 'Dulquer Salmaan',
+                rating: '9.8 / 10',
+                image: 'https://placehold.co/600x400/0d1326/d4af37?text=SITA+RAMAM+(Sita+Mahalakshmi)',
+                synopsis: 'An epic period romance set against the backdrop of 1960s Kashmir and Hyderabad. Lieutenant Ram, an orphan soldier, receives letters from Sita, leading to a timeless love story fraught with national secrets and sacrifice.',
+                characterPhilosophy: 'Embodying classical elegance, loyalty, and quiet regal poise that defined a generation of romantic cinema.',
+                awards: 'SIIMA Award for Best Actress, Filmfare Award South Nominee',
+                behindCraft: 'Mastered vintage 1960s body language, saree drapes, and emotive eye expressions for dual identities.'
+            },
+            {
+                id: 'hi-nanna',
+                title: 'Hi Nanna',
+                year: '2023',
+                director: 'Shouryuv',
+                language: 'Telugu',
+                role: 'Yashna / Varsha',
+                coStar: 'Nani',
+                rating: '9.6 / 10',
+                image: 'https://placehold.co/600x400/0d1326/d4af37?text=HI+NANNA+(Yashna)',
+                synopsis: 'An emotionally charged romantic drama exploring memory loss, maternal instincts, and second chances between a single father, his young daughter, and a compassionate woman.',
+                characterPhilosophy: 'Tenderness and vulnerability combined with strong emotional decision-making in complex relationship dynamics.',
+                awards: 'Critical Acclaim & SIIMA Lead Actress Recognition',
+                behindCraft: 'Portrayed nuanced amnesia trauma without melodrama, focusing on organic chemistry with child artist Kiara Khanna.'
+            },
+            {
+                id: 'super-30',
+                title: 'Super 30',
+                year: '2019',
+                director: 'Vikas Bahl',
+                language: 'Hindi',
+                role: 'Supriya',
+                coStar: 'Hrithik Roshan',
+                rating: '9.2 / 10',
+                image: 'https://placehold.co/600x400/0d1326/d4af37?text=SUPER+30+(Supriya)',
+                synopsis: 'Biographical drama on mathematician Anand Kumar. Supriya represents his pillar of affection, classical dance grace, and encouragement during early struggles.',
+                characterPhilosophy: 'Supporting love with dignity and graceful maturity.',
+                awards: 'Stardust / Screen Awards Acclaim',
+                behindCraft: 'Learned classical dance moves and Bihari dialect nuances.'
+            },
+            {
+                id: 'love-sonia',
+                title: 'Love Sonia',
+                year: '2018',
+                director: 'Tabrez Noorani',
+                language: 'Hindi / English',
+                role: 'Sonia',
+                coStar: 'Demi Moore, Freida Pinto, Manoj Bajpayee',
+                rating: '9.5 / 10',
+                image: 'https://placehold.co/600x400/0d1326/d4af37?text=LOVE+SONIA+(Sonia)',
+                synopsis: 'An international hard-hitting drama detailing a young village girl\'s harrowing journey through the dark global underworld of human trafficking to rescue her sister.',
+                characterPhilosophy: 'Raw resilience, survival instinct, and unyielding sisterly devotion.',
+                awards: 'Best Debutant Award (London Indian Film Festival)',
+                behindCraft: 'Spent weeks researching NGO shelters and immersion workshops to deliver a visceral, fearless debut.'
+            },
+            {
+                id: 'jersey',
+                title: 'Jersey',
+                year: '2022',
+                director: 'Gowtam Tinnanuri',
+                language: 'Hindi',
+                role: 'Vidya Rao Talwar',
+                coStar: 'Shahid Kapoor',
+                rating: '9.1 / 10',
+                image: 'https://placehold.co/600x400/0d1326/d4af37?text=JERSEY+(Vidya)',
+                synopsis: 'A poignant sports drama about a talented but failed cricketer who decides to return to cricket in his late 30s for his son\'s wish, while his wife carries the household burdens.',
+                characterPhilosophy: 'Pragmatic, hardworking woman balancing love, frustration, and realistic life pressures.',
+                awards: 'Womens Leadership & Acting Recognition',
+                behindCraft: 'Brought sharp realism to scenes depicting marital friction and practical life struggles.'
+            },
+            {
+                id: 'dhamaka',
+                title: 'Dhamaka',
+                year: '2021',
+                director: 'Ram Madhvani',
+                language: 'Hindi',
+                role: 'Saumya Mehra',
+                coStar: 'Kartik Aaryan',
+                rating: '9.0 / 10',
+                image: 'https://placehold.co/600x400/0d1326/d4af37?text=DHAMAKA+(Saumya)',
+                synopsis: 'A high-stakes newsroom thriller where an ambitious journalist reports live on a bomb threat, discovering his news anchor wife is reporting from the endangered site.',
+                characterPhilosophy: 'Courage under crisis and journalistic integrity.',
+                awards: 'OTT Excellence Award',
+                behindCraft: 'Delivered high-intensity scenes filmed under strict single-location schedule conditions.'
+            }
+        ];
+
+        const awardsData = [
+            { year: '2023', title: 'SIIMA Award - Best Actress', detail: 'Won Best Actress (Critics) for her historic performance in *Sita Ramam*', icon: 'fa-trophy' },
+            { year: '2018', title: 'London Indian Film Festival', detail: 'Best Outstanding Performance & Breakthrough for *Love Sonia*', icon: 'fa-globe' },
+            { year: '2024', title: 'SIIMA & Festival Recognition', detail: 'Lead Actress Honor for *Hi Nanna*', icon: 'fa-crown' },
+            { year: '2022', title: 'Dadasaheb Phalke International', detail: 'Most Promising Actress in Indian Cinema', icon: 'fa-award' }
+        ];
+
+        // --- STATE MANAGEMENT --- //
+        let currentThoughtIndex = 0;
+        let isAutoplay = true;
+        let autoplayInterval = null;
+
+        document.addEventListener('DOMContentLoaded', () => {
+            initMobileNav();
+            initPhilosophySlider();
+            renderFilms();
+            renderAwards();
+        });
+
+        function initMobileNav() {
+            const btn = document.getElementById('mobile-menu-btn');
+            const drawer = document.getElementById('mobile-drawer');
+            btn.addEventListener('click', () => {
+                drawer.classList.toggle('hidden');
+                drawer.classList.toggle('flex');
+            });
+            document.querySelectorAll('.mobile-link').forEach(link => {
+                link.addEventListener('click', () => drawer.classList.add('hidden'));
+            });
+        }
+
+        function initPhilosophySlider() {
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+            const autoplayBtn = document.getElementById('autoplay-btn');
+            const autoplayIcon = document.getElementById('autoplay-icon');
+            const ttsBtn = document.getElementById('tts-btn');
+
+            prevBtn.addEventListener('click', () => {
+                currentThoughtIndex = (currentThoughtIndex - 1 + thoughtsData.length) % thoughtsData.length;
+                updateSliderDisplay();
+            });
+
+            nextBtn.addEventListener('click', () => {
+                currentThoughtIndex = (currentThoughtIndex + 1) % thoughtsData.length;
+                updateSliderDisplay();
+            });
+
+            autoplayBtn.addEventListener('click', () => {
+                isAutoplay = !isAutoplay;
+                if (isAutoplay) {
+                    autoplayIcon.className = 'fa-solid fa-pause';
+                    startAutoplay();
+                } else {
+                    autoplayIcon.className = 'fa-solid fa-play';
+                    stopAutoplay();
+                }
+            });
+
+            ttsBtn.addEventListener('click', () => {
+                if ('speechSynthesis' in window) {
+                    window.speechSynthesis.cancel();
+                    const thought = thoughtsData[currentThoughtIndex];
+                    const utterance = new SpeechSynthesisUtterance(thought.text);
+                    utterance.rate = 0.9;
+                    
+                    const icon = document.getElementById('tts-icon');
+                    utterance.onstart = () => icon.className = 'fa-solid fa-volume-high text-gold-300 animate-pulse';
+                    utterance.onend = () => icon.className = 'fa-solid fa-volume-high';
+                    utterance.onerror = () => icon.className = 'fa-solid fa-volume-high';
+
+                    window.speechSynthesis.speak(utterance);
+                }
+            });
+
+            function startAutoplay() {
+                stopAutoplay();
+                autoplayInterval = setInterval(() => {
+                    currentThoughtIndex = (currentThoughtIndex + 1) % thoughtsData.length;
+                    updateSliderDisplay();
+                }, 5000);
+            }
+
+            function stopAutoplay() {
+                if (autoplayInterval) clearInterval(autoplayInterval);
+            }
+
+            function updateSliderDisplay() {
+                const item = thoughtsData[currentThoughtIndex];
+                document.getElementById('thought-category').innerText = item.category;
+                document.getElementById('thought-counter').innerText = `${currentThoughtIndex + 1} / ${thoughtsData.length}`;
+                document.getElementById('thought-text').innerText = `“${item.text}”`;
+
+                const progressPct = ((currentThoughtIndex + 1) / thoughtsData.length) * 100;
+                document.getElementById('progress-bar').style.width = `${progressPct}%`;
+            }
+
+            updateSliderDisplay();
+            startAutoplay();
+        }
+
+        function renderFilms() {
+            const grid = document.getElementById('films-grid');
+            grid.innerHTML = filmsData.map(film => `
+                <div class="glass-card rounded-2xl overflow-hidden flex flex-col justify-between group cursor-pointer" onclick="openFilmModal('${film.id}')">
+                    <div>
+                        <div class="relative overflow-hidden h-48 bg-black">
+                            <img src="${film.image}" alt="${film.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-3 right-3 px-2.5 py-1 rounded bg-black/80 border border-gold-500/40 text-[10px] font-cinzel text-gold-300 uppercase tracking-widest">
+                                ${film.language}
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-cinzel font-bold text-lg text-white group-hover:text-gold-300 transition-colors">${film.title}</h3>
+                                <span class="text-xs font-semibold text-gold-400 font-cinzel">${film.year}</span>
+                            </div>
+                            <p class="text-xs text-gold-300/80 mb-2 font-medium">Role: ${film.role}</p>
+                            <p class="text-xs text-gray-300 line-clamp-3 leading-relaxed mb-4">${film.synopsis}</p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-0">
+                        <button class="w-full py-2.5 rounded-xl border border-gold-500/30 group-hover:border-gold-400 bg-gold-500/10 group-hover:bg-gold-500 text-gold-300 group-hover:text-black font-cinzel text-xs font-bold uppercase tracking-wider transition-all">
+                            View Character Details
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        window.openFilmModal = function(id) {
+            const film = filmsData.find(f => f.id === id);
+            if (!film) return;
+
+            const modalContent = document.getElementById('modal-film-content');
+            modalContent.innerHTML = `
+                <div class="flex flex-col md:flex-row gap-6 items-start mb-6">
+                    <img src="${film.image}" alt="${film.title}" class="w-full md:w-5/12 h-56 object-cover rounded-2xl border border-gold-500/30">
+                    <div class="w-full md:w-7/12">
+                        <span class="px-3 py-1 rounded-full bg-gold-500/20 text-gold-300 text-[10px] font-cinzel uppercase tracking-widest border border-gold-500/40">
+                            ${film.language} Cinema Landmark
+                        </span>
+                        <h2 class="font-cinzel text-3xl font-bold text-white mt-2">${film.title}</h2>
+                        <p class="text-xs text-gold-400 font-semibold mt-1">Director: ${film.director} (${film.year}) | Rating: ${film.rating}</p>
+                        <p class="text-xs text-gray-300 mt-2"><strong>Character Role:</strong> ${film.role}</p>
+                        ${film.coStar ? `<p class="text-xs text-gray-400 mt-1"><strong>Co-Star:</strong> ${film.coStar}</p>` : ''}
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="p-4 rounded-xl bg-midnight-900/80 border border-gold-500/20">
+                        <h4 class="font-cinzel text-xs text-gold-400 font-bold uppercase tracking-wider mb-1">Synopsis & Plot</h4>
+                        <p class="text-xs md:text-sm text-gray-300 leading-relaxed">${film.synopsis}</p>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-gold-500/10 border border-gold-500/30">
+                        <h4 class="font-cinzel text-xs text-gold-400 font-bold uppercase tracking-wider mb-1">Character Philosophy</h4>
+                        <p class="text-xs md:text-sm text-gold-100 italic leading-relaxed font-playfair">"${film.characterPhilosophy}"</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="p-3.5 rounded-xl bg-black/40 border border-gold-500/20">
+                            <span class="text-[10px] font-cinzel text-gold-400 uppercase block font-bold">Awards & Acclaim</span>
+                            <span class="text-xs text-gray-200">${film.awards}</span>
+                        </div>
+                        <div class="p-3.5 rounded-xl bg-black/40 border border-gold-500/20">
+                            <span class="text-[10px] font-cinzel text-gold-400 uppercase block font-bold">Behind-The-Scenes Craft</span>
+                            <span class="text-xs text-gray-300">${film.behindCraft}</span>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            document.getElementById('film-modal').classList.remove('hidden');
+        };
+
+        document.getElementById('close-modal-btn').addEventListener('click', () => {
+            document.getElementById('film-modal').classList.add('hidden');
+        });
+
+        document.getElementById('film-modal').addEventListener('click', (e) => {
+            if (e.target.id === 'film-modal') {
+                document.getElementById('film-modal').classList.add('hidden');
+            }
+        });
+
+        function renderAwards() {
+            const container = document.getElementById('awards-grid');
+            container.innerHTML = awardsData.map(award => `
+                <div class="glass-card p-5 rounded-2xl flex items-start gap-4">
+                    <div class="w-10 h-10 rounded-xl bg-gold-500/20 border border-gold-500/40 flex-shrink-0 flex items-center justify-center text-gold-400">
+                        <i class="fa-solid ${award.icon}"></i>
+                    </div>
+                    <div>
+                        <span class="text-[10px] font-cinzel text-gold-400 font-bold block">${award.year}</span>
+                        <h4 class="font-cinzel text-sm font-bold text-white">${award.title}</h4>
+                        <p class="text-xs text-gray-300 mt-1">${award.detail}</p>
+                    </div>
+                </div>
+            `).join('');
+        }
+    </script>
+</body>
+</html>
